@@ -1,0 +1,74 @@
+body {
+    font-family: Helvetica; /* arregla la letra del navbar*/
+}
+
+
+
+/* =========  NAVBAR  ================== */
+.navbar {
+    background-color: darkblue;
+    position: fixed;   /* menu de navegacion fijo*/
+    width: 100vw;  /* como el menu esta fjo, con width 100vw ,recuperamos la anchura maxima*/
+    z-index: 1; /* para que se sobreponga sobre cualquier elelemnto en ese espacio*/
+}
+
+/* PAra la letra A , que esta de logotipo , seteamosel Font*/
+.navbar-brand {
+    font-family:'Oswald';
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* ==========  HERO SECTION ===============================*/
+
+#Hero-Section {
+    background-image: url("/assets/img/BG_hero_AT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;       /* autoajuste al espacio disponible*/
+    background-position: center;
+    height: 100vh;       /* para que la imagen ocupe todo el espacio disponible, no solo el alto del titulo "Alejandro" */
+    position: relative;  /* La seccion va a tener una posicion relativa,  porque los
+                         elementos que hemos declarado en nuetsra html los incluido dentro de 
+                         un DIV, con la intencion de utilizar un position relative y absolute
+                         para ocupar proximanete la propiedades left y top y ubicar  los elemento 
+                         donde nosotros querramos , dentro del espacio relativo, que en nuestro caso
+                         vendría siendo todo el Hero-Section, vamos a verlo en #Hero-Section div {  */
+}
+
+
+/* Div que esta dentro de la seccion "Hero-Section  */
+#Hero-Section div {
+    position:absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Barra de divison */
+.hero-line {
+    width: 345px;
+}
+
+/* Vamos a manipular los H1 de Hero-Section */
+#Hero-Section h1{
+    font-family: 'Oswald';
+    font-size: 72px;
+}
+
+/* Ahora el peso de la fuentes*/
+#Hero-Section h1:first-child{  /*  YO SOY  */
+    font-weight: 200;
+}
+
+#Hero-Section h1:last-child{ /*    ALEJANDRO  */
+    font-weight: 900;
+}
+
+
+/*=========== SOBRE-MI    ======================================== */
+#Sobre-Mi {
+    color: #373A3C;
+    font-family: 'Open Sans';
+    line-height: 3;           /* Interlineado */
+}
